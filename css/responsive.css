@@ -1,0 +1,43 @@
+@media screen and (max-width: 55em) {
+    .bannerHome h1 {
+        font-size: 20pt;
+        top: 35vh;
+    }
+    
+    h2 {
+        font-size: 16pt;
+    }
+    
+    .big-box-service {
+        height: 185px;
+    }
+    
+    .box-case figcaption {
+        opacity: 1;
+        background: rgba(0, 0, 0, .4);
+        top: 45%;
+    }
+    
+    .menu .logo {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    
+    .menu {
+        top: 0px;
+    }
+    
+    .navbar-nav li a {
+        font-size: 1em;
+        padding: 10px;
+    }
+    
+    .navbar-collapse.collapse.in {
+        width: 105%;
+        left: inherit;
+    }
+    
+    .modal .modal-dialog {
+        max-width: 90%;
+    }
+}

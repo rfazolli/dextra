@@ -41,12 +41,12 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="http://dextra.com.br/sobre-nos/">SOBRE NÓS</a></li>
-                        <li><a href="#services" class="scroll">O QUE FAZEMOS</a></li>
+                        <li><a href="http://dextra.com.br/#services">O QUE FAZEMOS</a></li>
                         <li><a href="http://dextra.com.br/cases/">CASES</a></li>
                         <li><a href="http://dextra.com.br/eventos/">EVENTOS</a></li>
                         <li><a href="http://dextra.com.br/midia/">CONTEÚDO</a></li>
                         <li><a href="https://jobs.kenoby.com/dextra/">CARREIRAS</a></li>
-                        <li><a href="#contato" class="scroll">CONTATO</a></li>
+                        <li><a href="http://dextra.com.br/#faleconosco">CONTATO</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,7 +55,7 @@
 
     <section class="bannerHome">
         <h1>Powering your <b>digital transformation</b> with<br>agile <b>software development</b></h1>
-        <a href="#services" class="scroll arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <a href="#anc" class="scroll arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
         <video class="video-banner" autoplay loop poster="images/poster.jpg"> 
             <source src="http://dextra.com.br/wp-content/themes/dextra-2015/images/video-highlight.webm" type="video/webm"> 
             <source src="http://dextra.com.br/wp-content/themes/dextra-2015/images/video-highlight.mp4" type="video/mp4">
@@ -63,7 +63,7 @@
     </section>
     
     
-    <section id="services" class="services">
+    <section id="anc" class="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -466,7 +466,7 @@
     </section>
     
     
-    <footer id="contato">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -576,6 +576,15 @@
         });
     </script>
     
+    <script>
+        jQuery("ul.navbar-nav li").click(function() { //When trigger is clicked...  
+            //Following events are applied to the subnav itself (moving subnav up and down)  
+            jQuery(this).find("ul.navbar-nav").slideDown('fast').show(); //Drop down the subnav on click  
+            jQuery(this).hover(function() {}, function() {
+                jQuery(this).find("ul.navbar-nav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up  
+            });
+        });
+    </script>
     
 </body>
 
